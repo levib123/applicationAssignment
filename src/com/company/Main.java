@@ -6,11 +6,11 @@ public class Main {
 
    public static void main(String[] args) {
       //write your code here
-      //temperature();
-      //timeConvert();
-      //acreage();
-      //candy();
-     // moneyReturn();
+      temperature();
+      timeConvert();
+      acreage();
+      candy();
+      moneyReturn();
       stringIndex();
    }
    public static void temperature ()  {
@@ -52,7 +52,7 @@ public class Main {
       double totalCost = (numCandy * 1.09 * 1.078);
       totalCost = Math.round(totalCost * 100);
 
-      System.out.print("Your total cost is $" + totalCost / 100);
+      System.out.println("Your total cost is $" + totalCost / 100);
    }
 
    public static void moneyReturn () {
@@ -69,10 +69,13 @@ public class Main {
 
    public static void stringIndex () {
       System.out.println("Put in an integer and a word: ");
-      int integer = input.nextInt();
+
       String word = input.nextLine();
+      int integer = input.nextInt();
+      System.out.println(word.charAt(integer));
 
 
    }
+
 }
 
